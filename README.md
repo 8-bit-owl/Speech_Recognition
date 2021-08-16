@@ -13,7 +13,7 @@ NOTE - Before running the following steps, please follow the section IBM Service
 
 3. replace the variables apikey and url with the API key and URL obtained from the IBM services.
 4. Run the python file Speech_to_text.py
-5. The python files should be present in the same directory in the form of txt files.
+5. The python files should be present in the same directory (/Audiofiles/) in the form of txt files.
 
 
 
