@@ -8,6 +8,7 @@ The below are the steps to be followed.
 git clone https://github.com/8-bit-owl/Speech_Recognition.git
 """
 2. Put the audio files that need to be converted to speech in the directory /Audiofiles/
+
 NOTE - Before running the following steps, please follow the section IBM Services.
 3. replace the variables apikey and url with the API key and URL obtained from the IBM services.
 4. Run the python file Speech_to_text.py
