@@ -1,6 +1,10 @@
 # Introduction
-This file has all the basic commands relates to git. Git bash can be downloaded from the link below
-/////git download link
+This file has all the basic commands related to git. All the commands below are to be executed in the Git bash. Git bash can be downloaded from the link below
+
+WINDOWS download link
+```
+https://git-scm.com/download/win 
+```
 
 
 # Useful git Commands
