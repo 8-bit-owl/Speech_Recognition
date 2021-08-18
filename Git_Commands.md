@@ -3,7 +3,7 @@ This file has all the basic commands relates to git. Git bash can be downloaded 
 /////git download link
 
 
-# Git Commands
+# Useful git Commands
 The following commands can be used to access, modify and undo the changes to the software that you are working on. Git has many features, but here are some of the useful ones used to maintain software.
 
 ```
@@ -38,3 +38,35 @@ git push
 ```
 This command actually changes the code in the git cloud. Once this command is executed, we should be able to see the changes in the browser.
 
+# Making changes for individual development
+```
+git clone "url"             // clone your repo
+git add .                   // you add files, or make you changes
+git commit -m "message"     // commit your changes with the message
+git push                    // actually push your changes to git repo
+```
+If one has to just make changes to the existing repo, the above commands are enough. These are major commands used in git.
+
+# What if multiple people work on git.
+Git is intended for streamlining the porcess of software development. So, any number of developers can make changes and software can be moved to previous version when there is a problem. There below are some useful commands.
+
+```
+git fetch
+```
+This command allows you to see if there are any changes to the current git repo in the cloud. Suppose you have checked the code yesterday and there were some changes today and some other person has pushed changes. So to check if the current local project is upto date with the one in cloud, we need to execute this command. Sometimes, the changes would clash and files are overwritten, so it is always healthy to fetch and see before commiting our changes to the code.
+
+Git fetch would show you if there are any changes after you have cloned the project. It will resemble somwthing like this.
+```
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 1.40 KiB | 159.00 KiB/s, done.
+From https://github.com/8-bit-owl/Speech_Recognition
+   5f4d923..4339397  master     -> origin/master
+```
+
+```
+git pull
+```
+If you have fetched and there are some changes that you need, you can 
