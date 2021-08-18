@@ -16,7 +16,7 @@ authenticator = IAMAuthenticator(apikey)
 stt = SpeechToTextV1(authenticator=authenticator)
 stt.set_service_url(url)
 print(stt)
-file_path = "./Audiofiles/"
+file_path = "Audiofiles/"
 audio_file_list = []
 text_file_list = []
 
@@ -39,7 +39,7 @@ def Speech_to_text(audiofile):
             for i in range(len(res['results'])):
                 text+=res['results'][i]['alternatives'][0]['transcript']
             text_file = audiofile.replace('.wav','.txt')
-            text_object = open(file_path + text_file,"w")
+            text_object = open(text_file,"w")
             n = text_object.write(text)
             text_object.close()
 
@@ -63,6 +63,6 @@ def Convert_folder(file_path):
         textfile = audiofile.replace('.wav','.txt')
         if textfile not in text_file_list:
             print("performing coversion of",audiofile)
-            Speech_to_text(audiofile)
+            Speech_to_text(file_path+audiofile)
 Convert_folder(file_path)
 print("Done !")
