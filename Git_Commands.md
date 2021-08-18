@@ -18,6 +18,11 @@ git clone "repostitory url"
 This command is for cloning the repository from online onto your local PC, where we can work and make changes. On top right of the repository, you can see the green code button and when we clicked, it will gove the url of the code. HTTPS is better but even SSH works copy the url and replace it in the repository url and it will download the code into your local directory.
 
 ```
+git remote add upstream "repository url"
+```
+This command connects the local working directory to the central one in the git cloud.
+
+```
 git add .
 ```
 This command is for adding files into the repository. The "." after add is for adding all the newly created files. If we want to add only specific files, we need to mention the file name seperately.
@@ -40,10 +45,11 @@ This command actually changes the code in the git cloud. Once this command is ex
 
 # Making changes for individual development
 ```
-git clone "url"             // clone your repo
-git add .                   // you add files, or make you changes
-git commit -m "message"     // commit your changes with the message
-git push                    // actually push your changes to git repo
+git clone "url"                           // clone your repo
+git remote add upstream "repository url"  // Git set upstream. Which connects the local direcoty to Central repo.
+git add .                                 // you add files, or make you changes.
+git commit -m "message"                   // commit your changes with the message.
+git push                                  // actually push your changes to git repo.
 ```
 If one has to just make changes to the existing repo, the above commands are enough. These are major commands used in git.
 ![image](https://user-images.githubusercontent.com/20287036/129835495-286cb9b2-148c-425b-b092-c55f095eaace.png)
@@ -70,6 +76,10 @@ From https://github.com/8-bit-owl/Speech_Recognition
 ```
 git pull
 ```
-If you have fetched and there are some changes that you need, you can 
+If you have fetched and there are some changes that you need, you can run the above command for the changes. Fetch and Pull should be the first commands that should be executed before you make changes to the local directory becasue there is a chance that the changes will be overwritten by git commands.
+
+```
+git update
+```
 
 
