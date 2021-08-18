@@ -78,8 +78,5 @@ git pull
 ```
 If you have fetched and there are some changes that you need, you can run the above command for the changes. Fetch and Pull should be the first commands that should be executed before you make changes to the local directory becasue there is a chance that the changes will be overwritten by git commands.
 
-```
-git update
-```
 
 
