@@ -49,7 +49,7 @@ This command actually changes the code in the git cloud. Once this command is ex
 
 # Making changes for individual development
 ```
-git clone "url"                           // clone your repo
+git clone "repository url"                           // clone your repo
 git remote add upstream "repository url"  // Git set upstream. Which connects the local direcoty to Central repo.
 git add .                                 // you add files, or make you changes.
 git commit -m "message"                   // commit your changes with the message.
