@@ -64,9 +64,9 @@ Git is intended for streamlining the porcess of software development. So, any nu
 ```
 git fetch
 ```
-This command allows you to see if there are any changes to the current git repo in the cloud. Suppose you have checked the code yesterday and there were some changes today and some other person has pushed changes. So to check if the current local project is upto date with the one in cloud, we need to execute this command. Sometimes, the changes would clash and files are overwritten, so it is always healthy to fetch and see before commiting our changes to the code.
+This command allows you to see if there are any changes to the current git repo in the cloud. Suppose you have checked the code yesterday and there were some changes today, you ll have trouble commiting your changes today. So to check if the current local project is upto date with the one in cloud, we need to execute this command. Some times, the changes would clash and files are overwritten, so it is always healthy preactice to fetch and see before commiting our changes to the central repo in the cloud.
 
-Git fetch would show you if there are any changes after you have cloned the project. It will resemble somwthing like this.
+Git fetch would show you if there are any changes after you have cloned the project. It will resemble something like this.
 ```
 remote: Enumerating objects: 5, done.
 remote: Counting objects: 100% (5/5), done.
