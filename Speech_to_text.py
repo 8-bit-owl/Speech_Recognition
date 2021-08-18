@@ -36,8 +36,11 @@ def Speech_to_text(audiofile):
     with open(audiofile, 'rb') as f:
             res = stt.recognize(audio=f, content_type='audio/wav', model='en-US_NarrowbandModel', continuous=True).get_result()
             text = ''
-            for i in range(len(res['results'])):
-                text+=res['results'][i]['alternatives'][0]['transcript']
+            try:
+                for i in range(len(res['results'])):
+                    text+=res['results'][i]['alternatives'][0]['transcript']
+            except KeyError:
+                    text = "No valid Audio Present"
             text_file = audiofile.replace('.wav','.txt')
             text_object = open(text_file,"w")
             n = text_object.write(text)
