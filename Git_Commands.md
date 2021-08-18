@@ -46,6 +46,7 @@ git commit -m "message"     // commit your changes with the message
 git push                    // actually push your changes to git repo
 ```
 If one has to just make changes to the existing repo, the above commands are enough. These are major commands used in git.
+![image](https://user-images.githubusercontent.com/20287036/129835495-286cb9b2-148c-425b-b092-c55f095eaace.png)
 
 # What if multiple people work on git.
 Git is intended for streamlining the porcess of software development. So, any number of developers can make changes and software can be moved to previous version when there is a problem. There below are some useful commands.
@@ -70,5 +71,5 @@ From https://github.com/8-bit-owl/Speech_Recognition
 git pull
 ```
 If you have fetched and there are some changes that you need, you can 
-![image](https://user-images.githubusercontent.com/20287036/129835372-1b99fdfc-8dcf-41c2-9b06-3b930cf12191.png)
+
 
