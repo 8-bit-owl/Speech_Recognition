@@ -70,3 +70,5 @@ From https://github.com/8-bit-owl/Speech_Recognition
 git pull
 ```
 If you have fetched and there are some changes that you need, you can 
+![image](https://user-images.githubusercontent.com/20287036/129835372-1b99fdfc-8dcf-41c2-9b06-3b930cf12191.png)
+
